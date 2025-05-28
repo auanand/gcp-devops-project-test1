@@ -4,3 +4,7 @@ steps:
 
 images:
   - 'gcr.io/$PROJECT_ID/gitops-test-1'
+
+options:
+  logging: NONE
+
