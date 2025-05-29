@@ -15,7 +15,6 @@ steps:
      - --location=us-central1-a
      - --cluster=gitops-test-1
      - --namespace=prod
-     - --metadata=container:gcp-devops-gke
 
 options:
   logging: CLOUD_LOGGING_ONLY
