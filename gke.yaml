@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gcp-devops-gke
+  name: prod
 spec:
   replicas: 1
   selector:
@@ -25,7 +25,7 @@ apiVersion: "v1"
 kind: "Service"
 metadata:
   name: "gcp-devops-gke-service"
-  namespace: "gcp-devops-prod"
+  namespace: "prod"
   labels:
     app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
 spec:
