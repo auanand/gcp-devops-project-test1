@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gcp-devops-gke
-        image: gcr.io/engaged-yen-457217-d3/gitops-test-1:latest
+        image: IMAGE_PLACEHOLDER
         ports:
         - containerPort: 5000
         env:
