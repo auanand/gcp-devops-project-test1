@@ -7,12 +7,12 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/gitops-test-1:$SHORT_SHA"]
 
-  # Deploy to GKE using gke-deploy
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
       - run
       - --filename=gke.yaml
       - --image=gcr.io/$PROJECT_ID/gitops-test-1:$SHORT_SHA
+      - --update-image=gcp-devops-gke=gcr.io/$PROJECT_ID/gitops-test-1:$SHORT_SHA
       - --location=us-central1-a
       - --cluster=gitops-test-1
       - --namespace=prod
