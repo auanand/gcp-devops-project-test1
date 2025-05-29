@@ -14,7 +14,7 @@ steps:
       - --filename=gke.yaml
       - --image=gcr.io/$PROJECT_ID/gitops-test-1
       - --location=us-central1-a
-      - --cluster=gcp-devops-project
+      - --cluster=gitops-test-1
       - --namespace=prod
 
 options:
